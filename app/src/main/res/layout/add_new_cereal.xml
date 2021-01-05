@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/add_cereal_add_percent"
+        android:layout_width="164dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/add_cereal_add_name"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:hint="%"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/add_cereal_add_name"
+        android:layout_width="164dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:hint="ime"
+        android:textSize="24sp" />
+
+</RelativeLayout>

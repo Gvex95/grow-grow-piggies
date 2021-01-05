@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/cerealName"
+        android:layout_width="125dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:textSize="20sp"
+        android:gravity="center|left" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="76dp"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/cerealName"
+        android:selectAllOnFocus="false"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <EditText
+            android:id="@+id/gram"
+            android:layout_width="76dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/percent"
+            android:gravity="center"
+            android:hint="gram"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
